@@ -1,0 +1,17 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# CI4 runtime
+contener/data/CI4/vendor/
+contener/data/CI4/writable/
+
+# env locaux
+contener/data/CI4/.env
+contener/data/CI4/env
+

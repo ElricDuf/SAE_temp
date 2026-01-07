@@ -1,0 +1,25 @@
+Création de la table (SQL)
+Rendez-vous sur phpMyAdmin (http://localhost:8082) et exécutez ce code SQL dans l'onglet "SQL" de la base tp :
+
+SQL
+
+CREATE TABLE produits (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL,
+    description TEXT,
+    prix DECIMAL(10, 2) NOT NULL,
+    image VARCHAR(255) DEFAULT 'default.jpg'
+);
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+-- Insertion de quelques exemples
+INSERT INTO produits (nom, description, prix) VALUES 
+('Clavier Gaming', 'Un clavier mécanique rétroéclairé.', 59.99),
+('Souris Sans Fil', 'Souris ergonomique haute précision.', 25.50),
+('Tapis de souris', 'Surface extra-large pour un meilleur confort.', 15.00);

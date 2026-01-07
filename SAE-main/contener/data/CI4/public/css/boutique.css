@@ -1,0 +1,164 @@
+/* Fond blanc et texte sombre pour cette page */
+body {
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #1a1a1a !important;
+}
+
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+}
+
+h1 {
+    color: var(--primary-blue);
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Style du formulaire de recherche (Filtres) */
+.search-container {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 40px;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.search-form input, 
+.search-form select {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.btn-search {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-search:hover {
+    background: #2563eb;
+}
+
+/* Grille de Beats */
+.beats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.beat-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid #eef2f7;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.beat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.1);
+    border-color: var(--primary-blue);
+}
+
+.beat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.beat-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    text-decoration: none;
+}
+
+.beat-price {
+    background: #eff6ff;
+    color: var(--primary-blue);
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.beat-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.info-tag {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.beat-seller {
+    border-top: 1px solid #f1f5f9;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.beat-seller strong {
+    color: #475569;
+}
+
+.btn-publish {
+    display: inline-block;
+    background: white;
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.btn-publish:hover {
+    background: var(--primary-blue);
+    color: white;
+}

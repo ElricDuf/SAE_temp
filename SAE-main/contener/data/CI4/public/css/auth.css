@@ -1,0 +1,136 @@
+body { 
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                      url('../images/image_accueil.jpg');
+}
+
+:root {
+    --primary-blue: #2563eb; 
+    --bg-page: #f3f4f6;    
+    --bg-card: #ffffff;      
+    --text-main: #1f2937;    
+    --text-sub: #6b7280;   
+    --border-color: #e5e7eb; 
+}
+
+.auth-card {
+    max-width: 400px;
+    margin: 50px auto;
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 12px;
+    /* Ombre plus douce et légère pour le fond blanc */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); 
+    border: 1px solid var(--border-color);
+}
+
+.auth-card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: var(--text-main); /* Changé de blanc à noir */
+}
+
+.auth-card p.subtitle {
+    text-align: center;
+    color: var(--text-sub);
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #374151; 
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    background: #ffffff; 
+    border: 1px solid #d1d5db; 
+    border-radius: 8px;
+    color: #111827; 
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-blue);
+    
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1); 
+    outline: none;
+}
+
+.btn-beatflow {
+    width: 100%;
+    padding: 14px;
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.btn-beatflow:hover {
+    opacity: 0.9;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--text-sub);
+}
+
+.footer-text a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.role-selector {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.role-option {
+    flex: 1;
+    background: #f9fafb; 
+    border: 2px solid var(--border-color); 
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--text-sub);
+}
+
+.role-option strong {
+    font-weight: 600;
+}
+
+.role-option input {
+    display: none;
+}
+
+.role-option.active {
+    border-color: var(--primary-blue);
+    background: #eff6ff; 
+    color: var(--primary-blue);
+}
